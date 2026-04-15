@@ -1,5 +1,5 @@
 
-# Robotics Regression (Notebook)
+# Kinematic computation 
 
 ## Overview
 
@@ -13,7 +13,7 @@ Instead of relying purely on analytical equations, the notebook trains a model t
 
 ---
 
-## What’s Inside
+
 
 The notebook walks through the full pipeline:
 
@@ -51,64 +51,4 @@ The notebook walks through the full pipeline:
 
 ---
 
-## How to Run
-
-1. Install dependencies:
-
-```bash
-pip install numpy pandas scikit-learn matplotlib joblib
-```
-
-2. Open the notebook:
-
-```bash
-jupyter notebook notebook.ipynb
-```
-
-3. Run all cells in order.
-
----
-
-## Example
-
-```python
-test_angles = [[0.5, -0.3]]
-predicted_position = model.predict(test_angles)
-```
-
----
-
-## Why This Matters
-
-Learning kinematics via regression is useful when:
-
-* The analytical model is unknown or too complex
-* The robot has flexible or non-rigid components
-* You are working with real-world noisy data
-
-This approach is commonly used in:
-
-* Robot calibration
-* Learning-based control
-* Simulation-to-real transfer
-
----
-
-## Next Steps
-
-To extend this notebook:
-
-* Switch to **inverse kinematics** (harder, multi-solution problem)
-* Add velocity/acceleration (dynamic modeling)
-* Replace the model with PyTorch or TensorFlow
-* Train on real robotic datasets (e.g., ROS logs)
-
----
-
-## Notes
-
-* This is a simplified example using synthetic data
-* Real-world robotics systems require handling constraints, noise, and uncertainty
-
----
 
